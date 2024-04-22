@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Care</title>
+  <link rel="stylesheet" href="patient1.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Select an Option:</h1>
+    <select id="optionSelect">
+      <option value="" disabled selected>Select an Option</option>
+      <option value="hospital">Hospital</option>
+      <option value="nurseCare">Special Nurse Care</option>
+    </select>
+
+    <div id="hospitalSection" class="hidden">
+      <h2>Select a Hospital:</h2>
+      <select id="hospitalSelect">
+        <option value="" disabled selected>Select Hospital</option>
+        <option value="DMCH">DMCH</option>
+        <option value="AIIMS Delhi">AIIMS DELHI</option>
+        <option value="AIIMS Patna">AIIMS PATNA</option>
+        <option value="AIIMS Mumbai">AIIMS MUMBAI</option>
+        <option value="Apollo Hospital">APOLLO HOSPITAL</option>
+      </select>
+      <div id="hospitalDetails" class="hidden">
+        <h3 id="hospitalName"></h3>
+        <p id="bedAvailability"></p>
+        <p id="bedsBooked"></p>
+        <p id="availableBeds"></p>
+      </div>
+    </div>
+
+    <div id="nurseCareSection" class="hidden">
+      <h2>Special Nurse Care:</h2>
+      <!-- Nurse details will be populated dynamically here -->
+    </div>
+  </div>
+
+  <script src="patient1.js"></script>
+</body>
+</html>

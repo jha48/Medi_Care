@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Blood Donation</h1>
+    <label for="state">Select State:</label>
+    <select id="state" onchange="showDistricts()">
+      <option value="" selected disabled>Select State</option>
+      <option value="bihar">Bihar</option>
+      <option value="jharkhand">Jharkhand</option>
+      <option value="goa">Goa</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="jaipur">Jaipur</option>
+      <option value="kolkata">Kolkata</option>
+      <option value="rajasthan">Rajasthan</option>
+    </select>
+    <div id="districts" style="display:none;">
+      <h2 id="stateName"></h2>
+      <table id="availability">
+        <!-- District-wise availability will be displayed here -->
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

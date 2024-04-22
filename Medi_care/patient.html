@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Care</title>
+  <link rel="stylesheet" href="patient.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Select a Hospital:</h1>
+    <select id="hospitalSelect">
+      <option value="" disabled selected>Select Hospital</option>
+      <option value="DMCH">DMCH</option>
+      <option value="AIIMS Delhi">AIIMS DELHI</option>
+      <option value="AIIMS Patna">AIIMS PATNA</option>
+      <option value="AIIMS Mumbai">AIIMS MUMBAI</option>
+      <option value="Apollo Hospital">APOLLO HOSPITAL</option>
+    </select>
+    <div id="hospitalDetails" class="hidden">
+      <h2 id="hospitalName"></h2>
+      <p id="bedAvailability"></p>
+      <p id="bedsBooked"></p>
+      <p id="availableBeds"></p>
+    </div>
+  </div>
+
+  <script src="patient.js"></script>
+</body>
+</html>
